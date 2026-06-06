@@ -8,7 +8,7 @@
 - first release
 
 ## release_2
-- minor changes
+- minor changes and rollback candidate
 
 ## 1.5.0
 - fixed checkout button issue
