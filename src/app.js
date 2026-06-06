@@ -1,11 +1,12 @@
 // Dummy Checkout Service
 
-const VERSION = 'checkout-service-placeholder';
+const SERVICE_NAME = 'checkout-service';
+const SERVICE_VERSION = '0.0.0-placeholder';
 
-function runCheckout() {
-  console.log('Checkout service starting...');
-  console.log(`Version: ${VERSION}`);
-  console.log('This repository is for release tagging exercises, not application development.');
+function run() {
+  console.log(`${SERVICE_NAME} starting...`);
+  console.log(`Service version: ${SERVICE_VERSION}`);
+  console.log('This service is a placeholder for the release tagging exercise.');
 }
 
-runCheckout();
+run();
