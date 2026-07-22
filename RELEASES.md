@@ -1,29 +1,30 @@
 # Release Notes
 
-## v1.0.0 (2026-07-21)
+## v1.1.1 - 22 July 2026 (Deploy #101)
 
-### Added
-- Initial project release.
+### Change Scope
 
-**Rollback Target:** None
+- Fixed release-tagging workflow.
+- Updated repository documentation.
+- Improved deployment validation process.
 
----
+### Validation
 
-## v1.1.0 (2026-07-21)
+- GitHub Actions workflow: PASS
+- Repository builds successfully.
+- Manual verification of tags completed.
 
-### Added
-- Added release documentation.
+### Risks
 
-**Rollback Target:** v1.0.0
+- Incorrect release tags may trigger the wrong deployment.
+- Deployment workflow should be monitored after release.
 
----
+### Rollback
 
-## v1.1.1 (2026-07-21)
+Target: v1.1.0
 
-### Added
-- Added dummy checkout service.
+Steps:
 
-### Fixed
-- Improved release traceability with semantic version tags.
-
-**Rollback Target:** v1.1.0
+1. Checkout tag v1.1.0
+2. Redeploy previous version.
+3. Verify deployment health.
